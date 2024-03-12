@@ -1,0 +1,3 @@
+0001-Remove-Composer-autoload.patch
+0002-schema-is-installed-in-usr-share-php-data-PHPUnit.patch
+0003-Default-cache-location-to-current-directory.patch

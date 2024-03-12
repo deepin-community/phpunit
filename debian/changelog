@@ -1,5 +1,2072 @@
-template-repository (1.0-1) unstable; urgency=medium
+phpunit (9.6.17-1) unstable; urgency=medium
 
-  * Initial release
+  [ Sebastian Bergmann ]
+  * Prepare release
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ David Prévot ]
+  * Force system dependencies loading
+
+ -- David Prévot <taffit@debian.org>  Sun, 25 Feb 2024 12:29:29 +0100
+
+phpunit (9.6.16-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Bump copyright year
+  * Try to validate configuration file against all known schema definitions
+    before attempting migration
+  * Prepare release
+
+  [ Robert ]
+  * #5666 - Fixed --no-extensions cli parameter
+
+  [ David Prévot ]
+  * Update copyright (years)
+  * Update copyright for embedded scripts
+
+ -- David Prévot <taffit@debian.org>  Sun, 21 Jan 2024 19:13:12 +0100
+
+phpunit (9.6.15-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Add note about API changes in internal code
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Tue, 05 Dec 2023 08:19:41 +0100
+
+phpunit (9.6.13-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * The child processes used for process isolation now use temporary files to
+    communicate their result to the parent process
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Wed, 20 Sep 2023 09:08:13 +0530
+
+phpunit (9.6.12-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ Filippo Tessarotto ]
+  * CodeCoverage: process PHP report as first in list to avoid serializing
+    cache data
+
+ -- David Prévot <taffit@debian.org>  Tue, 12 Sep 2023 22:11:06 +0530
+
+phpunit (9.6.11-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Add list of deprecated functionality
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Wed, 06 Sep 2023 22:31:10 +0530
+
+phpunit (9.6.10-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ Nicolas Grekas ]
+  * Fix XSD to allow empty <extensions> tag
+
+ -- David Prévot <taffit@debian.org>  Thu, 13 Jul 2023 07:51:06 +0200
+
+phpunit (9.6.9-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Mon, 12 Jun 2023 05:10:56 +0200
+
+phpunit (9.6.7-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Delete PHPUnit 8.5 ChangeLog
+  * Prepare release
+
+  [ jrfnl ]
+  * PHPUnit 9 | Update deprecation notices for assertObject[Not]HasAttribute()
+
+  [ Andreas Möller ]
+  * Fix: Adjust order of values when assembling error message
+
+ -- David Prévot <taffit@debian.org>  Sat, 15 Apr 2023 08:00:46 +0200
+
+phpunit (9.6.6-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ Andreas Möller ]
+  * Enhancement: Dump all required and unavailable extensions at once
+
+ -- David Prévot <taffit@debian.org>  Wed, 29 Mar 2023 08:08:28 +0200
+
+phpunit (9.6.5-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Backport TestDox HTML improvements
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Thu, 09 Mar 2023 19:38:36 +0100
+
+phpunit (9.6.4-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ John Blackbourn ]
+  * Detail deprecations for 9.6.1 in the changelog
+
+ -- David Prévot <taffit@debian.org>  Tue, 28 Feb 2023 01:13:21 +0100
+
+phpunit (9.6.3-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Tue, 07 Feb 2023 13:40:51 +0100
+
+phpunit (9.6.1-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Track version 9 for now (Bookworm?)
+
+ -- David Prévot <taffit@debian.org>  Sat, 04 Feb 2023 00:52:07 +0100
+
+phpunit (9.6.0-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Track version 9 for now (Bookworm?)
+
+ -- David Prévot <taffit@debian.org>  Fri, 03 Feb 2023 15:32:37 +0100
+
+phpunit (9.5.28-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Bump copyright year
+  * Prepare release
+
+  [ Alexander M. Turek ]
+  * Allow doctrine/instantiator 2
+
+  [ David Prévot ]
+  * Set upstream metadata fields: Security-Contact.
+  * Update standards version to 4.6.2, no changes needed.
+  * Update copyright (years)
+
+ -- David Prévot <taffit@debian.org>  Mon, 16 Jan 2023 07:48:20 +0100
+
+phpunit (9.5.27-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ Michał Jusięga ]
+  * Implement logic to blocks readonly classes to be doubled.
+
+ -- David Prévot <taffit@debian.org>  Sun, 11 Dec 2022 19:09:43 +0100
+
+phpunit (9.5.26-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Tue, 01 Nov 2022 08:04:22 +0100
+
+phpunit (9.5.25-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Drop patches not needed anymore
+  * Update license
+
+ -- David Prévot <taffit@debian.org>  Fri, 30 Sep 2022 16:51:12 +0200
+
+phpunit (9.5.24-3) unstable; urgency=medium
+
+  * Fix lowest deps for phpunit-{exporter,comparator}
+
+ -- David Prévot <taffit@debian.org>  Tue, 20 Sep 2022 01:46:44 +0200
+
+phpunit (9.5.24-2) unstable; urgency=medium
+
+  * Adapt precision for recent phpunit-comparator (Closes: #1020119)
+
+ -- David Prévot <taffit@debian.org>  Sun, 18 Sep 2022 23:32:44 +0200
+
+phpunit (9.5.24-1) unstable; urgency=medium
+
+  [ Michael Voříšek ]
+  * Fix memory leak in ExceptionWrapper
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Tue, 30 Aug 2022 13:32:13 +0200
+
+phpunit (9.5.23-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Drop now useless debian/pkg-php-tools-* entries
+  * Drop php-phpspec-prophecy* (build-)dependencies
+  * Build-depend on phpunit-comparator
+  * Workaround test issue during build
+  * Trim trailing whitespace
+
+ -- David Prévot <taffit@debian.org>  Wed, 24 Aug 2022 08:02:09 +0200
+
+phpunit (9.5.21-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Let's see whether we really/still need PDO
+
+  [ David Prévot ]
+  * Drop php-sqlite3, unused in tests
+  * Don’t use php-xdebug
+
+ -- David Prévot <taffit@debian.org>  Mon, 20 Jun 2022 16:56:22 +0200
+
+phpunit (9.5.20-3) unstable; urgency=medium
+
+  * Source only upload
+
+ -- David Prévot <taffit@debian.org>  Thu, 26 May 2022 18:48:20 +0200
+
+phpunit (9.5.20-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- David Prévot <taffit@debian.org>  Thu, 26 May 2022 18:40:24 +0200
+
+phpunit (9.5.20-1) experimental; urgency=medium
+
+  * Upload version depending on new phpunit-type to experimental
+
+  [ Sebastian Bergmann ]
+  * Depend on sebastian/type ^3.0
+  * Prepare release
+
+  [ David Prévot ]
+  * Update tests files paths
+  * Build-depend on recent phpunit-type
+  * Update Standards-Version to 4.6.1
+
+ -- David Prévot <taffit@debian.org>  Mon, 23 May 2022 22:55:02 +0200
+
+phpunit (9.5.16-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Revert sync with API change in (now yanked) phpunit/php-code-coverage 9.2.12
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Sat, 05 Mar 2022 15:43:37 +0100
+
+phpunit (9.5.14-1) unstable; urgency=medium
+
+  [ Marijn van Wezel ]
+  * Use predefined PHP float epsilon
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Sat, 19 Feb 2022 15:08:53 -0400
+
+phpunit (9.5.13-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Mon, 24 Jan 2022 09:30:00 -0400
+
+phpunit (9.5.12-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Bump copyright year
+  * Update documentation for TestListener deprecation
+  * Document that the Hook interfaces will be removed in PHPUnit 10
+  * Prepare release
+
+  [ Stefano Arlandini ]
+  * Fix access to optional array key when using `debug_backtrace()` function
+
+  [ Andrii Kasian ]
+  * ISSUE-4798: Memory leaks in TestSuite class
+
+  [ David Prévot ]
+  * Update copyright (years)
+
+ -- David Prévot <taffit@debian.org>  Fri, 21 Jan 2022 08:35:03 -0400
+
+phpunit (9.5.11-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * d/control: Drop versioned dependencies satisfied in stable
+  * Drop unnecessary debian/pkg-php-tools-* entries
+
+ -- David Prévot <taffit@debian.org>  Sat, 25 Dec 2021 07:58:39 -0400
+
+phpunit (9.5.10-1) unstable; urgency=medium
+
+  * Upload to unstable now that Bullseye is released
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Drop patch part not needed anymore
+  * Drop reference to removed file
+  * Update standards version to 4.6.0, no changes needed
+  * Generate phpabtpl at build time
+
+ -- David Prévot <taffit@debian.org>  Thu, 07 Oct 2021 14:35:57 -0400
+
+phpunit (9.5.7-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Use dh-sequence-phpcomposer instead of pkg-php-tools
+
+ -- David Prévot <taffit@debian.org>  Tue, 20 Jul 2021 08:08:01 +0200
+
+phpunit (9.5.6-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Mon, 28 Jun 2021 05:32:45 +0200
+
+phpunit (9.5.5-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Refactor test result cache persistence to not rely on
+    serialize() and unserialize()
+  * Prepare release
+
+  [ David Prévot ]
+  * Force tests/bootstrap.php to use vendor/autoload.php
+
+ -- David Prévot <taffit@debian.org>  Fri, 18 Jun 2021 09:15:01 -0400
+
+phpunit (9.5.4-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Wed, 24 Mar 2021 07:25:00 -0400
+
+phpunit (9.5.3-1) experimental; urgency=medium
+
+  * Upload to experimental during the freeze
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Install /u/s/p/{autoloaders,overrides} files
+
+ -- David Prévot <taffit@debian.org>  Thu, 18 Mar 2021 21:13:32 -0400
+
+phpunit (9.5.2-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Simplify gbp import-orig workflow
+  * Verify upstream signed tag on import
+
+ -- David Prévot <taffit@debian.org>  Wed, 03 Feb 2021 14:03:03 -0400
+
+phpunit (9.5.1-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Update copyright (years)
+
+ -- David Prévot <taffit@debian.org>  Mon, 18 Jan 2021 13:38:59 -0400
+
+phpunit (9.5.0-5) unstable; urgency=medium
+
+  * Add anthor break, against composer
+
+ -- David Prévot <taffit@debian.org>  Fri, 01 Jan 2021 09:22:41 -0400
+
+phpunit (9.5.0-4) unstable; urgency=medium
+
+  * Explicit breaks to avoid failing autopkgtest.
+    Declare explicit breaks against older version of packages that are fixed
+    in unstable and should migrate in sync with PHPUnit 9. This should allow
+    the whole PHPUnit 9 stack to migrate.
+
+ -- David Prévot <taffit@debian.org>  Mon, 28 Dec 2020 10:12:59 -0400
+
+phpunit (9.5.0-3) unstable; urgency=medium
+
+  * Source upload now that everything is in place, for real this time
+
+ -- David Prévot <taffit@debian.org>  Sun, 20 Dec 2020 22:40:02 -0400
+
+phpunit (9.5.0-2) unstable; urgency=medium
+
+  * Source upload now that everything is in place
+
+ -- David Prévot <taffit@debian.org>  Sun, 20 Dec 2020 17:25:57 -0400
+
+phpunit (9.5.0-2~stage1) unstable; urgency=medium
+
+  * Upload to unstable in sync with PHPUnit 9 stack
+
+ -- David Prévot <taffit@debian.org>  Sun, 20 Dec 2020 15:40:57 -0400
+
+phpunit (9.5.0-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Update watch file format version to 4.
+  * Update Standards-Version to 4.5.1
+
+ -- David Prévot <taffit@debian.org>  Thu, 10 Dec 2020 10:46:18 -0400
+
+phpunit (9.4.2-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Thu, 22 Oct 2020 13:27:56 -0400
+
+phpunit (9.4.1-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Wed, 14 Oct 2020 15:26:21 -0400
+
+phpunit (9.4.0-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Sun, 04 Oct 2020 11:24:04 -0400
+
+phpunit (9.3.11-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Sat, 26 Sep 2020 21:54:04 -0400
+
+phpunit (9.3.10-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Fix help2man call to match new output
+  * Fix debian/clean to match cacheResultFile
+  * Rename main branch to debian/latest (DEP-14)
+  * Extend clean up (.phpunit.result.cache)
+
+ -- David Prévot <taffit@debian.org>  Mon, 14 Sep 2020 16:38:43 -0400
+
+phpunit (9.3.8-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Move help for --no-logging option to logging section
+  * Depend on sebastian/cli-parser
+  * Prepare release
+
+  [ David Prévot ]
+  * Still install phpunit.xsd
+  * Adapt packaging to new phpunit-cli-parser dependency
+
+ -- David Prévot <taffit@debian.org>  Sat, 29 Aug 2020 10:32:06 -0400
+
+phpunit (9.3.7-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Exclude more class for homemade test autoload.php
+
+ -- David Prévot <taffit@debian.org>  Mon, 17 Aug 2020 13:42:59 -0400
+
+phpunit (9.3.0-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Install schema instead of phpunit.xsd
+  * Build-Depend on recent php-codecoverage
+
+ -- David Prévot <taffit@debian.org>  Fri, 07 Aug 2020 11:32:49 +0200
+
+phpunit (9.2.6-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Exclude more class for homemade test autoload.php
+
+ -- David Prévot <taffit@debian.org>  Tue, 14 Jul 2020 09:14:27 -0400
+
+phpunit (9.2.5-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Sun, 28 Jun 2020 11:44:34 -1000
+
+phpunit (9.2.2-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Wed, 10 Jun 2020 15:22:39 -1000
+
+phpunit (9.2.1-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Exclude more class for homemade test autoload.php
+  * Build-Depend on recent php-timer
+
+ -- David Prévot <taffit@debian.org>  Fri, 05 Jun 2020 17:44:41 -1000
+
+phpunit (9.1.5-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Ignore tests etc. from archive exports
+  * Prepare release
+
+  [ David Prévot ]
+  * Document gbp import-ref usage
+  * Use debhelper-compat 13
+  * Simplify override_dh_auto_test
+  * Set Rules-Requires-Root to no
+  * Build-Depend on php-phpspec-prophecy-phpunit
+  * Factorise test handling
+  * Add phpunit-code-unit to pkg-php-tools-overrides
+  * Remove flaky/useless tests
+
+ -- David Prévot <taffit@debian.org>  Sun, 31 May 2020 07:42:22 -1000
+
+phpunit (9.1.3-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Add phpunit-code-unit (build-)dependency
+
+ -- David Prévot <taffit@debian.org>  Sun, 26 Apr 2020 08:40:27 -1000
+
+phpunit (9.0.1-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ Andrius Merkys ]
+  * Default cache location to current directory (Closes: #951258)
+
+ -- David Prévot <taffit@debian.org>  Sun, 23 Feb 2020 11:39:37 -1000
+
+phpunit (9.0.0-1) experimental; urgency=medium
+
+  * Upload new version 9 to experimental
+
+  [ Sebastian Bergmann ]
+  * Bump copyright year
+  * Prepare release
+
+  [ David Prévot ]
+  * Update Autoload.php to new dependency and Functions.php
+  * Update build-dependencies
+  * Update Standards-Version to 4.5.0
+  * Update copyright (years)
+  * Wrap long lines in changelog entries: 7.1.5-1.
+
+ -- David Prévot <taffit@debian.org>  Fri, 07 Feb 2020 23:28:24 -1000
+
+phpunit (8.5.2-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Delete eval-stdin.php
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Fri, 10 Jan 2020 01:09:16 +1300
+
+phpunit (8.5.1-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Set upstream metadata fields: Bug-Database, Repository, Bug-Submit
+
+ -- David Prévot <taffit@debian.org>  Sat, 28 Dec 2019 10:04:44 +1100
+
+phpunit (8.5.0-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Start development of PHPUnit 8.5
+  * Prepare release
+
+  [ David Prévot ]
+  * Set upstream metadata fields: Repository-Browse.
+
+ -- David Prévot <taffit@debian.org>  Fri, 06 Dec 2019 15:52:30 -1000
+
+phpunit (8.4.3-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Exclude duplicate test file from autoload
+  * Extend cleanup
+
+ -- David Prévot <taffit@debian.org>  Fri, 08 Nov 2019 18:56:46 -1000
+
+phpunit (8.4.2-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Exclude duplicate test file from autoload
+
+ -- David Prévot <taffit@debian.org>  Thu, 31 Oct 2019 00:29:04 -1000
+
+phpunit (8.4.1-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Mon, 07 Oct 2019 17:33:33 -1000
+
+phpunit (8.4.0-2) unstable; urgency=medium
+
+  * Install phpunit.xsd in /usr/share/php/data/PHPUnit
+  * Extend d/clean
+
+ -- David Prévot <taffit@debian.org>  Sun, 06 Oct 2019 12:46:13 -1000
+
+phpunit (8.4.0-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Set upstream metadata fields: Repository.
+  * Drop versioned dependency satisfied in stable
+  * Drop reference to package not part of stable
+  * Update Standards-Version to 4.4.1
+
+ -- David Prévot <taffit@debian.org>  Sat, 05 Oct 2019 17:04:51 -1000
+
+phpunit (8.3.5-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Mon, 16 Sep 2019 18:40:06 -1000
+
+phpunit (8.3.4-2) unstable; urgency=medium
+
+  * Upload to unstable now that all dependencies are available
+  * Drop phpunit-dbunit reference
+  * Adapt to php-invoker new install path
+  * Remove obsolete fields Name, Contact from debian/upstream/metadata.
+
+ -- David Prévot <taffit@debian.org>  Fri, 13 Sep 2019 15:12:26 -1000
+
+phpunit (8.3.4-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Delete old ChangeLog files
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Sat, 10 Aug 2019 21:34:18 -1000
+
+phpunit (8.3.3-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Mon, 05 Aug 2019 08:56:37 -0400
+
+phpunit (8.3.2-1) experimental; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Set upstream metadata fields: Contact, Name.
+  * Add self to Uploaders
+
+ -- David Prévot <taffit@debian.org>  Fri, 02 Aug 2019 16:15:37 -0400
+
+phpunit (8.2.5-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Update Standards-Version to 4.4.0
+
+ -- David Prévot <taffit@debian.org>  Tue, 16 Jul 2019 07:13:58 -0300
+
+phpunit (8.2.4-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Wed, 03 Jul 2019 14:57:31 -1000
+
+phpunit (8.2.3-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Sun, 23 Jun 2019 16:37:30 -1000
+
+phpunit (8.2.2-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Adapt package to new phpunit-type dependency
+  * Update phpunit-environment lower bound
+
+ -- David Prévot <taffit@debian.org>  Mon, 17 Jun 2019 14:13:47 -1000
+
+phpunit (8.1.5-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Mon, 20 May 2019 12:42:56 -1000
+
+phpunit (8.1.4-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Sun, 12 May 2019 23:11:47 -1000
+
+phpunit (8.1.3-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Wed, 24 Apr 2019 01:06:41 -1000
+
+phpunit (8.1.2-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Thu, 11 Apr 2019 22:24:23 +0900
+
+phpunit (8.1.0-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Sat, 06 Apr 2019 09:41:43 -1000
+
+phpunit (8.0.6-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Thu, 28 Mar 2019 15:55:28 -1000
+
+phpunit (8.0.5-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Sun, 17 Mar 2019 20:50:53 -1000
+
+phpunit (8.0.4-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Mon, 18 Feb 2019 06:57:45 -1000
+
+phpunit (8.0.3-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Simplify clean target
+
+ -- David Prévot <taffit@debian.org>  Fri, 15 Feb 2019 22:27:12 -1000
+
+phpunit (8.0.2-1) experimental; urgency=medium
+
+  * Team upload of new major version to experimental
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Mon, 11 Feb 2019 14:31:53 -1000
+
+phpunit (7.5.3-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Fri, 01 Feb 2019 11:49:37 -1000
+
+phpunit (7.5.2-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ David Prévot ]
+  * Drop Olivier Berger from Uploaders (Closes: #917915)
+  * Use debhelper-compat 12
+  * Update Standards-Version to 4.3.0
+  * Update copyright (years)
+
+  [ Sebastian Bergmann ]
+  * Bump copyright year
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Mon, 21 Jan 2019 20:32:28 -1000
+
+phpunit (7.5.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Delete old ChangeLogs
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Wed, 12 Dec 2018 15:41:28 -1000
+
+phpunit (7.5.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Sun, 09 Dec 2018 06:56:23 -1000
+
+phpunit (7.4.5-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Use /usr/share/dpkg/default.mk instead of dpkg-parsechangelog
+
+ -- David Prévot <taffit@debian.org>  Wed, 05 Dec 2018 07:17:29 -1000
+
+phpunit (7.4.4-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Revert "Skip failing test with PHP 7.3" applied upstream
+
+ -- David Prévot <taffit@debian.org>  Wed, 14 Nov 2018 20:55:45 -1000
+
+phpunit (7.4.3-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Allow sebastian/environment ^4.0
+  * Prepare release
+  * Skip failing test with PHP 7.3 (Closes: #912153)
+
+ -- David Prévot <taffit@debian.org>  Mon, 29 Oct 2018 13:47:35 -1000
+
+phpunit (7.4.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Use https in Format
+  * Drop get-orig-source target
+
+ -- David Prévot <taffit@debian.org>  Fri, 05 Oct 2018 21:48:59 -1000
+
+phpunit (7.3.5-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Reorganize test suite
+  * Prepare release
+
+  [ David Prévot ]
+  * Adapt excluded file to new upstream path
+
+ -- David Prévot <taffit@debian.org>  Sat, 08 Sep 2018 09:06:43 -1000
+
+phpunit (7.3.3-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Use debhelper-compat = 11
+  * Update Standards-Version to 4.2.1
+
+ -- David Prévot <taffit@debian.org>  Mon, 03 Sep 2018 17:58:56 -1000
+
+phpunit (7.3.2-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Thu, 23 Aug 2018 15:18:33 -1000
+
+phpunit (7.3.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Update Standards-Version to 4.2.0
+
+ -- David Prévot <taffit@debian.org>  Tue, 07 Aug 2018 23:03:20 +0800
+
+phpunit (7.2.7-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Update Standards-Version to 4.1.5
+
+ -- David Prévot <taffit@debian.org>  Wed, 18 Jul 2018 07:52:48 +0800
+
+phpunit (7.2.6-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix messy libxmlerror state (Closes: #902008)
+
+ -- David Prévot <taffit@debian.org>  Tue, 03 Jul 2018 12:02:32 -1000
+
+phpunit (7.2.6-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Bump phar-io versioned dependencies (Closes: #902933)
+
+ -- David Prévot <taffit@debian.org>  Tue, 03 Jul 2018 08:40:21 -1000
+
+phpunit (7.2.4-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Reorganize.
+  * Use phpunit/php-file-iterator ^2.0
+  * Prepare release
+
+  [ Graham Campbell ]
+  * Upgrade to doctrine instantiator
+
+  [ David Prévot ]
+  * Update homemade autoload to new dependencies
+  * Update build-dependencies
+  * Drop phpunit-mock-objects now shipped in
+  * Use php-soap for the tests
+  * Provide phpunit.xsd used for validation
+
+ -- David Prévot <taffit@debian.org>  Wed, 20 Jun 2018 10:56:54 -1000
+
+phpunit (7.1.5-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ Dennis van der Velde ]
+  * Consistency: testdox for method that is written in snake-case now starts
+    with a uppercase letter
+
+ -- David Prévot <taffit@debian.org>  Wed, 16 May 2018 18:59:56 -1000
+
+phpunit (7.1.4-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Start development of PHPUnit 7.1
+  * Allow sebastian/comparator ^3.0
+  * Prepare release
+
+  [ David Prévot ]
+  * Update Standards-Version to 4.1.4
+  * Include more files for tests (as in composer.json)
+
+ -- David Prévot <taffit@debian.org>  Fri, 20 Apr 2018 10:16:23 -1000
+
+phpunit (7.0.3-1) unstable; urgency=medium
+
+  * Team upload to unstable now that everything is ready
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ Dennis van der Velde ]
+  * Strip of remaining s\ when TestDox classname starts with Tests\
+
+  [ David Prévot ]
+  * Fix Vcs-* URLs
+
+ -- David Prévot <taffit@debian.org>  Thu, 29 Mar 2018 07:52:13 -1000
+
+phpunit (7.0.2-1) experimental; urgency=medium
+
+  * Team upload of new major version to experimental
+
+  [ Sebastian Bergmann ]
+  * Start development of PHPUnit 7.0
+  * Prepare release
+
+  [ David Prévot ]
+  * Update copyright (years)
+  * Move project repository to salsa.d.o
+  * Update Standards-Version to 4.1.3
+  * Require php-timer (>= 2), phpunit-mock-object (>= 6) and
+    phpunit-diff (>= 3) for the build.
+
+ -- David Prévot <taffit@debian.org>  Sun, 04 Mar 2018 22:19:53 -1000
+
+phpunit (6.5.5-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Mon, 25 Dec 2017 18:05:32 +0530
+
+phpunit (6.5.4-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Tue, 12 Dec 2017 18:32:14 -1000
+
+phpunit (6.5.3-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Fix an issue with PHPT tests when forceCoversAnnotation="true" is configured
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Fri, 08 Dec 2017 17:38:45 -1000
+
+phpunit (6.5.2-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Start development of PHPUnit 6.5
+  * Prepare release
+
+  [ David Prévot ]
+  * Update Standards-Version to 4.1.2
+
+ -- David Prévot <taffit@debian.org>  Mon, 04 Dec 2017 18:13:32 -1000
+
+phpunit (6.4.4-2) unstable; urgency=medium
+
+  * Team upload
+  * Upload to unstable, with the rest of the latest PHPUnit stack
+
+ -- David Prévot <taffit@debian.org>  Sat, 25 Nov 2017 15:18:19 -1000
+
+phpunit (6.4.4-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Mon, 13 Nov 2017 09:47:23 +1300
+
+phpunit (6.4.3-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Tue, 17 Oct 2017 12:17:37 -1000
+
+phpunit (6.4.1-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Start development of PHPUnit 6.4
+  * Prepare release
+
+  [ David Prévot ]
+  * Update Standards-Version to 4.1.1
+
+ -- David Prévot <taffit@debian.org>  Wed, 11 Oct 2017 17:36:08 -1000
+
+phpunit (6.3.1-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Tue, 26 Sep 2017 17:17:48 -1000
+
+phpunit (6.3.0-1) experimental; urgency=medium
+
+  * Team upload
+  * Upload to experimental since the dependencies are not all in unstable yet
+
+  [ Sebastian Bergmann ]
+  * Allow global-state 2.0
+  * Allow next version of sebastian/comparator
+  * Allow sebastian/global-state ^2.0
+  * Allow sebastian/object-enumerator ^3.0
+  * Allow sebastian/exporter ^3.0
+  * Use phar-io/manifest to verify PHAR extensions
+  * Use php-code-coverage 5.2
+  * Allow sebastian/environment ^3.0
+  * Allow sebastian/diff ^2.0
+  * Prepare release
+
+  [ David Prévot ]
+  * Drop php-token-stream from suggestions
+  * Drop Thomas Goirand from uploaders as he requested
+  * Update Standards-Version to 4.1.0
+  * Update copyright (years)
+  * Adapt packaging to updated dependencies
+
+ -- David Prévot <taffit@debian.org>  Wed, 23 Aug 2017 18:59:32 -1000
+
+phpunit (5.4.6-2~deb9u1) stretch; urgency=high
+
+  * Team upload
+  * Upload previous fix to Stretch
+
+ -- David Prévot <taffit@debian.org>  Wed, 28 Jun 2017 17:03:35 -1000
+
+phpunit (5.4.6-2) unstable; urgency=high
+
+  * Team upload
+  * Fix arbitrary PHP code execution via HTTP POST [CVE-2017-9841]
+    (Closes: #866200)
+
+ -- David Prévot <taffit@debian.org>  Wed, 28 Jun 2017 16:43:26 -1000
+
+phpunit (5.4.6-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Update minimum version requirements
+  * Fix package name in 5.4.2+dfsg-1 previous entry
+
+ -- David Prévot <taffit@debian.org>  Sat, 18 Jun 2016 18:16:55 -0400
+
+phpunit (5.4.4-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Ignore /build directory
+  * Prepare release
+
+  [ David Prévot ]
+  * Update package to now dropped /build directory
+
+ -- David Prévot <taffit@debian.org>  Thu, 09 Jun 2016 21:25:08 -0400
+
+phpunit (5.4.2+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Deprecate PHPUnit_Framework_TestCase::getMock()
+  * Require new version of phpunit-mock-objects
+  * Prepare release
+
+  [ David Prévot ]
+  * Adapt homemade autoload.php to php-codecoverage new path
+
+ -- David Prévot <taffit@debian.org>  Sat, 04 Jun 2016 14:15:02 -0400
+
+phpunit (5.3.4+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * Make tests more robust
+
+ -- David Prévot <taffit@debian.org>  Sun, 15 May 2016 10:55:09 -0400
+
+phpunit (5.3.4+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Fri, 13 May 2016 14:49:50 -0400
+
+phpunit (5.3.2+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Wed, 13 Apr 2016 20:52:18 -0400
+
+phpunit (5.3.1+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Drop build/tools/composer containing sourceless hiddeninput.exe
+  * Update copyright (path)
+  * Update Standards-Version to 3.9.8
+
+ -- David Prévot <taffit@debian.org>  Fri, 08 Apr 2016 12:29:18 -0400
+
+phpunit (5.3.0-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Finish work on
+    https://github.com/sebastianbergmann/phpunit-mock-objects/issues/296
+  * Use stable dependencies in preparation for PHPUnit 5.3.0
+  * Prepare release
+
+  [ Prach Pongpanich ]
+  * Remove the PHP version number from a short description
+  * Update homemade Autoload.php
+  * Build dependency on phpunit-object-enumerator
+  * Add override for phpunit-object-enumerator
+  * Revert "Add patch to add phpunit-mock-object 3.1.x compatibility"
+
+ -- Prach Pongpanich <prach@debian.org>  Mon, 04 Apr 2016 13:21:41 +0700
+
+phpunit (5.2.12-2) unstable; urgency=medium
+
+  * Team upload
+  * Add patch to add phpunit-mock-object 3.1.x compatibility (Closes: #819620)
+    - 0002-Fix-compatibility-with-phpunit-mock-object-3.1.patch
+  * Improve extraction of upstream version in d/rules
+
+ -- Daniel Beyer <dabe@deb.ymc.ch>  Thu, 31 Mar 2016 13:08:39 +0200
+
+phpunit (5.2.12-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Mon, 21 Mar 2016 15:16:10 -0400
+
+phpunit (5.2.10-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Revert previous workarounds, and build with recent pkg-php-tools for the
+    PHP 7.0 transition
+
+ -- David Prévot <taffit@debian.org>  Sat, 05 Mar 2016 19:49:13 -0400
+
+phpunit (5.2.9-3) unstable; urgency=medium
+
+  * Team upload
+  * Workaround the ongoing yet not ready PHP 7.0 transition
+    - Add override for php(5.6)-xml (#815988);
+    - pkgtools called with -v triggers a segfault (#814858).
+  * Add php-xml (split from php-common) to build-dependencies
+  * Prepare other php5 build-dependencies for the PHP 7.0 transition
+
+ -- David Prévot <taffit@debian.org>  Mon, 29 Feb 2016 22:54:31 -0400
+
+phpunit (5.2.9-2) unstable; urgency=medium
+
+  * Team upload
+  * Build-depend on php-debug instead of php5-xdebug (Closes: #814826)
+
+ -- David Prévot <taffit@debian.org>  Thu, 25 Feb 2016 22:48:57 -0400
+
+phpunit (5.2.9-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Update copyright (years)
+  * Update Standards-Version to 3.9.7
+
+ -- David Prévot <taffit@debian.org>  Thu, 25 Feb 2016 19:30:50 -0400
+
+phpunit (5.1.3-1) unstable; urgency=medium
+
+  [ Aaron Piotrowski ]
+  * Allow throwing any Throwable
+
+  [ Sebastian Bergmann ]
+  * Update ChangeLog
+  * Bump dependency
+  * Prepare release
+
+  [ Prach Pongpanich ]
+  * Bump Build-Depends on phpunit-mock-object to (>= 3.0.5)
+
+ -- Prach Pongpanich <prach@debian.org>  Thu, 17 Dec 2015 11:17:59 +0700
+
+phpunit (5.0.10-1) unstable; urgency=medium
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+  * Fixed #1953: `Error`s raised outside the scope of a test method
+    are not handled properly
+  * Fix CS/WS issues
+
+  [ Nicolas Grekas ]
+  * Fix insulated tests with phpdbg
+
+ -- Prach Pongpanich <prach@debian.org>  Tue, 01 Dec 2015 12:39:10 +0700
+
+phpunit (5.0.9-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Remove leftover references to PHPUnit_Selenium
+  * Prepare release
+
+  [ David Prévot ]
+  * Remove references to phpunit-selenium
+
+ -- David Prévot <taffit@debian.org>  Wed, 11 Nov 2015 12:28:38 -0400
+
+phpunit (5.0.8-2) unstable; urgency=medium
+
+  * Team upload, to unstable since everything is in place
+
+ -- David Prévot <taffit@debian.org>  Fri, 30 Oct 2015 15:47:53 -0400
+
+phpunit (5.0.8-1) experimental; urgency=medium
+
+  * Team upload, to experimental since some dependencies are new
+
+  [ Sebastian Bergmann ]
+  * Use short array syntax
+  * Depend on stable versions (in preparation for PHPUnit 5.0 release)
+  * Prepare release
+
+  [ David Prévot ]
+  * Revert "Track version 4 for the moment"
+  * Update for new dependencies
+
+ -- David Prévot <taffit@debian.org>  Mon, 26 Oct 2015 15:50:33 -0400
+
+phpunit (4.8.16-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Start PHPUnit 4.8 development
+  * Fix CS/WS issues
+  * Prepare release
+
+  [ David Prévot ]
+  * Track version 4 for the moment
+  * Update copyright for embedded phpab
+  * Drop now useless workaround
+  * Update dependencies
+  * Drop phpunit-story from suggests
+
+ -- David Prévot <taffit@debian.org>  Mon, 26 Oct 2015 12:30:41 -0400
+
+phpunit (4.7.6-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Thu, 02 Jul 2015 10:47:31 -0400
+
+phpunit (4.7.5-1) unstable; urgency=medium
+
+  * Team upload, to unstable since Jessie has been released
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Simplify build as upstream
+  * Drop currently failing test
+
+ -- David Prévot <taffit@debian.org>  Mon, 22 Jun 2015 21:23:38 -0400
+
+phpunit (4.6.4-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Update blacklist
+  * Prepare release
+
+ -- David Prévot <taffit@debian.org>  Sun, 12 Apr 2015 00:52:29 -0400
+
+phpunit (4.6.2-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Revert "Autoloading of Functions into `composer.json`"
+  * Prepare release
+
+  [ David Prévot ]
+  * Update homemade autoload
+
+ -- David Prévot <taffit@debian.org>  Tue, 07 Apr 2015 22:44:05 -0400
+
+phpunit (4.6.1-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Add ChangeLog
+  * Prepare release
+
+  [ David Prévot ]
+  * Install upstream changelog
+  * Update homemade Autoload.php
+  * Actually run PHPUnit tests suite on build
+  * Build-depend on php5-sqlite and php5-xdebug for tests
+
+ -- David Prévot <taffit@debian.org>  Fri, 03 Apr 2015 22:41:43 -0400
+
+phpunit (4.5.0-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Sebastian Bergmann ]
+  * Prepare release
+
+  [ David Prévot ]
+  * Update copyright
+  * Drop useless upstream README
+  * Update Homepage
+  * Handle new dependencies
+  * Fix rules: upstream build target is about tests
+  * Generate manpage at build time
+  * Provide DEP-8 tests
+
+ -- David Prévot <taffit@debian.org>  Tue, 10 Feb 2015 21:18:04 -0400
+
+phpunit (4.2.6-3) experimental; urgency=medium
+
+  * Team upload to experimental to respect the freeze
+
+  [ Daniel Beyer ]
+  * Add patch 0002-Fix-bootstrapping-in-process-isolation-with-unpreser.patch.
+    This fixes an issue with bootstrapping for tests run in process isolation
+    with an unpreserved global state. This issue is already closed by upstream
+    and fixed in phpunit 4.3.0.
+
+ -- David Prévot <taffit@debian.org>  Wed, 04 Feb 2015 06:21:32 -0400
+
+phpunit (4.2.6-2) unstable; urgency=medium
+
+  [ Prach Pongpanich ]
+  * Upload to unstable (Closes: #744876)
+
+  [ Daniel Beyer ]
+  * Fix tests can not be run in separate processes
+
+ -- Prach Pongpanich <prachpub@gmail.com>  Sun, 05 Oct 2014 01:40:09 +0700
+
+phpunit (4.2.6-1) experimental; urgency=medium
+
+  * Imported Upstream version 4.2.6
+  * Switch from PEAR to Composer source
+  * Update copyright
+
+ -- Prach Pongpanich <prachpub@gmail.com>  Wed, 01 Oct 2014 20:10:00 +0700
+
+phpunit (3.7.28-2) unstable; urgency=medium
+
+  * Team upload
+  * Build-depend on recent pear-channels to get rid of php-symfony2-yaml
+  * Remove overrides now present in pear-channels
+  * Bump standards version to 3.9.6
+
+ -- David Prévot <taffit@debian.org>  Tue, 23 Sep 2014 16:55:34 -0400
+
+phpunit (3.7.28-1) unstable; urgency=medium
+
+  [ Prach Pongpanich ]
+  * New upstream release (Closes: #697343)
+    + PHPUnit no longer throws exceptions that do not extend
+      PHPUnit_Framework_Exception (Closes: #712667)
+  * Depends on php-codecoverage (>= 1.2.1) (Closes: #736147)
+  * Add Build-Depends on php5-cli (>= 5.3.7-1~) (Closes: #693369)
+  * Update debian/watch to point to pear.phpunit.de
+  * Bump debhelper compat to 9
+  * Add myself as uploader
+  * Use canonical URI in Vcs-* fields
+  * Build depend on pear-channels
+  * Bump Standard-Version to 3.9.5
+  * Change Build-depends on pkg-php-tools (>= 1.1~)
+    + Drop all debian/patches
+  * Add debian/pkg-php-tools-overrides
+  * Update the manpage
+  * Change the maintainers name to Debian PHP PEAR Maintainers
+  * Drop Replaces: phpunit2 and Suggests: phpunit-dbunit,
+    which are not present in the archive
+
+  [ David Prévot ]
+  * Drop php-invoker already brought by ${phppear:Debian-Recommends}
+  * Fix copyright years
+  * Remove overrides already present in pear-channels
+
+ -- Prach Pongpanich <prachpub@gmail.com>  Thu, 06 Feb 2014 11:42:12 +0700
+
+phpunit (3.6.10-1) unstable; urgency=low
+
+  * New upstream version.
+  * Adopting the package (Closes: #607393).
+
+  [ Thomas Goirand ]
+  * Fixed debian/watch file to use the github tags.
+  * Added a debian/gbp.conf (and renamed branches on Alioth).
+  * Added Vcs fields.
+  * Switching package to pkg-php-tools.
+  * Standards-Version is now 3.9.3 (no change).
+  * Switched debian/copyright to format 1.0.
+  * Added a channel.xml file (as a quilt patch).
+  * Removed useless debian/phpunit-doc.doc-base, debian/docs, debian/dirs,
+  and debian/install (we are now using "pear install" with the package.xml...).
+  * Removed useless debian/README.Debian that was advising to get stuff
+  outside debian.
+  * Removed versions from Suggests:, removed double Section: in debian/control.
+  * Maintainer: is now PKG-PHP-PEAR team <pkg-php-pear@lists.alioth.debian.org>
+  * Patches package.xml to remove unwanted LICENSE file from binaries.
+  * Reviewed (new) dependencies of the binary package.
+
+  [ Olivier Berger ]
+  * Add dependency on php-codecoverage (Closes: #607372), and so many missing
+  dependencies.
+  * Remove phpunit-doc generation, as may not be rebuildable from sources.
+
+ -- Thomas Goirand <zigo@debian.org>  Sun, 22 Apr 2012 12:53:21 +0800
+
+phpunit (3.5.5-2) unstable; urgency=low
+
+  * fix doc-base-file-references-missing-file
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Sat, 11 Dec 2010 18:19:39 +0300
+
+phpunit (3.5.5-1) unstable; urgency=low
+
+  * upload to debian
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Sat, 11 Dec 2010 14:23:30 +0300
+
+phpunit (3.5.5-0ubuntu1) natty; urgency=low
+
+  * New upstream release
+    - Added support for getMockForAbstractClass()
+      to the mock builder API.
+    - Added a ticket listener that interacts with
+      the Trac issue API.
+    - Added support for E_USER_NOTICE and E_USER_WARNING
+      to PHPUnit_Framework_Error_Notice and
+      PHPUnit_Framework_Error_Warning, respectively.
+    - Refactored test dependency handling (required for a
+      bugfix in PHPUnit_Selenium).
+    - Fixed --stop-on-failure.
+  * fix watch path
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Thu, 09 Dec 2010 14:08:50 +0300
+
+phpunit (3.5.3-0ubuntu1) natty; urgency=low
+
+  * New upstream release
+    - Fixed GH-13: Result XML inconsistent when
+      data provider returns empty array or does not exist.
+    - Fixed the skeleton generator for tested classes.
+    - Strict mode is now compatible with process isolation.
+    - Worked around http://bugs.php.net/bug.php?id=52911
+      to make process isolation work on Windows.
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Mon, 01 Nov 2010 09:29:40 +0300
+
+phpunit (3.5.2-0ubuntu1) natty; urgency=low
+
+  * New upstream release
+    - Fixed GH-30: --repeat option does not work.
+    - Fixed GH-34: Bogus bootstrap file raises cryptic error.
+    - Fixed GH-47: Failure message ignored in assertSelectCount().
+    - Fixed GH-48: Remove strict incomplete duplication.
+    - Tests that are incomplete or skipped no longer yield
+      code coverage in strict mode.
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Thu, 21 Oct 2010 00:17:20 +0400
+
+phpunit (3.5.0-1) unstable; urgency=low
+
+  * New upstream release
+    - Implemented TRAC-834: Refactor collection, processing,
+      and rendering of code coverage information using the
+      [PHP_CodeCoverage](http://github.com/sebastianbergmann/
+      php-code-coverage) component.
+    - Implemented TRAC-948: Add D-BUS test listener.
+    - Implemented TRAC-967: Only populate whitelist when code
+      coverage is used.
+    - Implemented TRAC-985: Sort arrays before diff.
+    - Implemented TRAC-1033: Supplement commandline option
+      `--stop-on-error` and friends.
+    - Implemented TRAC-1038: Add `assertInstanceOf()`,
+      `assertAttributeInstanceOf()`, `assertNotInstanceOf()`, and
+      `assertAttributeNotInstanceOf()` as well as `assertInternalType()`,
+      `assertAttributeInternalType()`, `assertNotInternalType()`,
+      and `assertAttributeNotInternalType()`.
+    - Implemented TRAC-1039: Added support for `regexpi:`
+      matcher to Selenium RC driver.
+    - Implemented TRAC-1078: Added support for setting
+      superglobals via the XML configuration file.
+    - Added support for mocking/stubbing of static methods.
+      This requires PHP 5.3 and late static binding.
+    - Added `assertStringMatchesFormat()` and `assertStringNotMatchesFormat()`
+      as well as `assertStringMatchesFormatFile()` and
+      `assertStringNotMatchesFormatFile()` for `EXPECTF`-like
+      (`run-tests.php`) format string matching.
+    - Added `assertEmpty()` and `assertNotEmpty()` as well as
+      `assertAttributeEmpty()` and `assertAttributeNotEmpty()`.
+    - Added the `@expectedExceptionCode` and
+      `@expectedExceptionMessage` annotations.
+    - Added support for the [XML format of mysqldump](http://dev.mysql.com
+      /doc/refman/5.1/en/mysqldump.html#option_mysqldump_xml) to the
+      database extension.
+    - Added the `<includePath>` element to the `<php>` section of
+      the XML configuration file.
+    - Added the `verbose` attribute to the `<phpunit>` element of
+      the XML configuration file.
+    - Added a ticket listener that interacts with the GitHub issue API.
+    - Added a ticket listener that interacts with the GoogleCode issue API.
+    - Added a test listener that uses
+      [XHProf](http://mirror.facebook.net/facebook/xhprof/doc.html)
+      to profile the tested code.
+    - Added the `--strict` switch to mark tests that perform
+      no assertions as incomplete.
+    - The paths in the XML configuration file can now be relative to
+      the directory that contains the XML configuration file.
+    - The `@author` annotation is now an alias for `@group`
+      allowing to filter tests based on their authors.
+    - The `PHPUnit_Extensions_SeleniumTestCase::$autoStop`
+      flag has been removed, please start Selenium RC with
+      `-browserSessionReuse` instead.
+    - The `--log-metrics` and `--log-pmd` switches have been removed.
+      Their functionality has been or will be merged into
+      [PHP_Depend](http://pdepend.org/) and [PHPMD](http://phpmd.org/).
+      Details can be found [here](http://sebastian-bergmann.de/archives/
+      744-On-PHPUnit-and-Software-Metrics.html).
+    - The `--ansi` switch has been removed, please use `--colors` instead.
+    - The `--coverage-source` switch has been removed.
+    - The `--coverage-xml` switch has been removed, please use
+      `--coverage-clover` instead.
+    - The `--log-graphviz` switch has been removed.
+    - The `--log-xml` switch has been removed, please use
+      `--log-junit` instead.
+    - The `--report` switch has been removed, please use
+      `--coverage-html` instead.
+    - The `--skeleton` switch has been removed, please use
+      `--skeleton-test` instead.
+    - The `TestListener` implementation that logs to
+      [PEAR::Log](http://pear.php.net/package/Log) sinks has been removed.
+    - The test database functionality has been removed.
+    - The shared fixture functionality has been removed.
+    - `PHPUnit_Extensions_PerformanceTestCase` has been removed.
+    - `PHPUnit_Extensions_TicketListener_Trac` has been removed.
+    - The `PHPUnit_Extensions_Story_TestCase` functionality has been deprecated.
+    - Replaced `PHPUnit_Framework_MockObject` with the
+      [PHPUnit_MockObject](http://github.com/sebastianbergmann/
+      phpunit-mock-objects) component.
+    - Replaced `PHPUnit_Extensions_Database_TestCase` with the
+      [DbUnit](http://github.com/sebastianbergmann/dbunit) component.
+    - Replaced `PHPUnit_Extensions_SeleniumTestCase` with the
+      [PHPUnit_Selenium](http://github.com/sebastianbergmann/phpunit-selenium)
+      component.
+    - Replaced `PHPUnit_Util_FilterIterator` with the
+      [PHP_FileIterator](http://github.com/sebastianbergmann/php-file-iterator)
+      component.
+    - Replaced `PHPUnit_Util_Template` with the
+      [Text_Template](http://github.com/sebastianbergmann/php-text-template)
+      component.
+    - Replaced `PHPUnit_Util_Timer` with the
+      [PHP_Timer](http://github.com/sebastianbergmann/php-timer) component.
+    - Fixed TRAC-1068: `assertSame()` on two floats does not print the error
+      message.
+    - Fixed GH-7: Code paths that create a `PHPUnit_Framework_Warning`
+      end up serializing/unserializing globals unconditionally.
+    - PHPUnit now requires PHP 5.2.7 (or later) but PHP 5.3.3 (or later) is
+      highly recommended.
+  * Bump Standards-Version to 3.9.1, no change needed
+  * remove dbunit (LP: #595244)
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Mon, 27 Sep 2010 20:23:39 +0400
+
+phpunit (3.4.15-1) maverick; urgency=low
+
+  * New upstream release
+    F TRAC-939: Missing test classes when using process isolation
+    F TRAC-1024: setUpBeforeClass() does not work in process isolation
+    F TRAC-1075: empty <file></file> in phpunit.xml causes errors
+  * switch to quilt
+  * update getDoc
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Sun, 18 Jul 2010 23:18:44 +0400
+
+phpunit (3.4.14-1) unstable; urgency=low
+
+  * New upstream release
+    F TRAC-1057: phpunit_coverage.php deletes all
+      files in web server document root
+    F TRAC-1062: GlobalState::restoreSuperGlobalArray
+      throws error when global isn't an array
+    F TRAC-1063: Trailing Whitespace in files
+    F TRAC-1056: Badly done data providers cause crashes
+  * update manpage (Closes: #586214)
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Thu, 17 Jun 2010 20:05:03 +0400
+
+phpunit (3.4.13-1) unstable; urgency=low
+
+  * New upstream release
+    F TRAC-1035: PostgreSQL MetaData queries are incorrect
+    F TRAC-1043: method names in HTML code coverage report
+      are not properly escaped
+    F TRAC-1045: filter has problems with Umlaut
+  * update doc
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Tue, 25 May 2010 20:20:00 +0400
+
+phpunit (3.4.12-1) unstable; urgency=low
+
+  * New upstream release
+    I TRAC-1027: Declare a decent return-type in
+      PHPUnit_Framework_TestCase::getMock().
+    F TRAC-1013: Undefined index: _ENV running supplied tests.
+    F TRAC-1016: Usage of {} to access string offsets is deprecated.
+    F TRAC-1021: Depending on a test that uses a data provider does not work.
+    F TRAC-1030: Selenese tests cause double escaping of
+      Selenium actions and arguments.
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Sat, 10 Apr 2010 11:20:44 +0400
+
+phpunit (3.4.11-1) unstable; urgency=low
+
+  * New upstream release
+    F tearDownAfterClass() irregularly called with @dataProvider
+    F Missing include of PHPUnit_Framework_Exception in PHPUnit/Util/Filter.php
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Wed, 17 Feb 2010 10:55:59 +0300
+
+phpunit (3.4.10-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump Standards-Version to 3.8.4, no change needed
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Fri, 12 Feb 2010 20:40:06 +0300
+
+phpunit (3.4.9-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Wed, 03 Feb 2010 23:20:55 +0300
+
+phpunit (3.4.5-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Sat, 26 Dec 2009 02:42:24 +0300
+
+phpunit (3.4.3-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Sat, 28 Nov 2009 11:44:13 +0300
+
+phpunit (3.4.2+repack-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Wed, 04 Nov 2009 12:02:57 +0300
+
+phpunit (3.4.1+repack-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Mon, 12 Oct 2009 11:13:48 +0400
+
+phpunit (3.4.0+repack-1) unstable; urgency=low
+
+  * New upstream release
+  * update documentation
+  * update version number in patch and getDoc.sh
+  * Bump Standards-Version to 3.8.3, no change needed
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Thu, 17 Sep 2009 01:50:23 +0400
+
+phpunit (3.3.17+repack-2) unstable; urgency=low
+
+  * Fix debian/copyright - add CC License on doc
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Tue, 07 Jul 2009 09:58:09 +0400
+
+phpunit (3.3.17+repack-1) unstable; urgency=low
+
+  * New upstream release
+  * Fix warnings (Closes: #534485)
+  * Fixed manpage (Closes: #529302)
+  * Added package phpunit-doc
+  * Removed package phpunit2
+  * Repacked original source (added documentation)
+  * Changed section from web to php
+  * Bump Standards-Version to 3.8.2, no change needed
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Mon, 29 Jun 2009 21:16:47 +0400
+
+phpunit (3.3.16-1) unstable; urgency=low
+
+  * New upstream release
+    - fix some bugs
+  * debian/control:
+    - Standards-Version: 3.8.1
+  * Update manpage
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Thu, 16 Apr 2009 23:13:35 +0400
+
+phpunit (3.3.15-1) unstable; urgency=low
+
+  * New upstream release
+    - fix some bugs
+  * Update manpage
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Sun, 01 Mar 2009 01:21:58 +0300
+
+phpunit (3.3.14-1) unstable; urgency=low
+
+  * New upstream release
+  * Update manpage to 3.3.14
+  * Fix build scpipt - in orig move phpunit to phpunit.php
+  * debian/watch: Updated.
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Mon, 16 Feb 2009 20:34:19 +0300
+
+phpunit (3.3.10-1) unstable; urgency=low
+
+  * New upstream release
+  * New mantainer. (Closes: #512687)
+  * Remove depend from php5. (Closes: #466767)
+  * debian/control:
+    - Standards-Version: 3.8.0
+  * Update manpage to 3.3.10
+  * Add patch for remove yui library
+    license problem - no source code avalible now and function is no usable
+
+ -- Ivan Borzenkov <ivan1986@list.ru>  Thu, 22 Jan 2009 02:16:47 +0300
+
+phpunit (3.2.16-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Jose Carlos Medeiros <debian@psabs.com.br>  Thu, 27 Mar 2008 00:11:53 -0300
+
+phpunit (3.2.5-1) unstable; urgency=low
+
+  * New upstream release
+  * New mantainer. (Closes: #454908)
+  * Removed install of PHPUnit2 that was changed to PHPUnit.
+  * debian/control:
+    - Updated "Homepage:" pseudo-header as Reference 1.14.6.
+    - Standards-Version: 3.7.3
+  * Added phpunit.1 man page.
+
+ -- Jose Carlos Medeiros <debian@psabs.com.br>  Fri, 14 Dec 2007 21:28:41 -0200
+
+phpunit (3.0.6-3) unstable; urgency=low
+
+  * QA upload, orphaning this package.
+
+ -- Bart Martens <bartm@debian.org>  Sat, 08 Dec 2007 08:58:27 +0100
+
+phpunit (3.0.6-2) unstable; urgency=low
+
+  * debian/control: Added transitional package "phpunit2".
+  * debian/watch: Updated.
+
+ -- Bart Martens <bartm@knars.be>  Sat, 16 Jun 2007 13:05:13 +0200
+
+phpunit (3.0.6-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches/01missingfile.diff: Removed obsolete patch.
+  * debian/patches/02renamebin.diff: Removed obsolete patch.
+  * debian/control: Merging packages phpunit and phpunit2.  Closes: #424824.
+  * debian/rules, debian/control, debian/install, debian/links: Not using
+    /usr/share/cdbs/1/class/pear.mk so not Build-Depends on dh-make-php.
+  * debian/control, debian/copyright: Upstream homepage has moved.
+
+ -- Bart Martens <bartm@knars.be>  Sat, 19 May 2007 16:26:14 +0200
+
+phpunit2 (2.3.6-2) unstable; urgency=low
+
+  * debian/*: Repackaged with dh-make-pear version 0.1.3.
+  * debian/patches/01missingfile.diff: Missing Util/AllTests.php.
+  * debian/patches/02renamebin.diff: Install /usr/bin/phpunit2.
+  * debian/control: Added php-pear, php5-cli, php-benchmark to Depends.
+    Closes: #386516, #386803.
+  * debian/README.Debian: More documentation on the web.
+
+ -- Bart Martens <bartm@knars.be>  Sun, 10 Sep 2006 17:15:59 +0200
+
+phpunit2 (2.3.6-1) unstable; urgency=low
+
+  * New upstream release.  Note the two source packages, phpunit for use with
+    php4, and phpunit2 (this package) for use with php5.  Closes: #380468.
+
+ -- Bart Martens <bartm@knars.be>  Sun, 30 Jul 2006 12:42:40 +0200
+
+phpunit (1.3.2-2) unstable; urgency=low
+
+  * New maintainer.  Closes: #374437.
+  * debian/*: Repackaged with dh-make 0.41.
+  * debian/copyright: Updated to BSD license.
+  * PHPUnit-1.3.2/PHPUnit/GUI/Gtk.php: Fixed reference to license.
+  * debian/control: Added homepage to description.
+  * debian/watch: Added.
+
+ -- Bart Martens <bartm@knars.be>  Sun, 30 Jul 2006 10:59:20 +0200
+
+phpunit (1.3.2-1) unstable; urgency=low
+
+  * New upstream version.  (Closes: #340847)
+  * Orphaned.
+
+ -- Matthew Palmer <mpalmer@debian.org>  Mon, 19 Jun 2006 21:21:17 +1000
+
+phpunit (1.1.1-2) unstable; urgency=low
+
+  * Improved the message generation, including some refactoring and improved
+    message passing.
+
+ -- Matthew Palmer <mpalmer@debian.org>  Tue, 16 Nov 2004 15:19:32 +1100
+
+phpunit (1.1.1-1) unstable; urgency=low
+
+  * Initial release.  Closes: #273649.  Nice version number, don't you think?
+
+ -- Matthew Palmer <mpalmer@debian.org>  Sat,  6 Nov 2004 18:05:58 +1100

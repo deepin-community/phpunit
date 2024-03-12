@@ -1,0 +1,22 @@
+From: Andrius Merkys <merkys@debian.org>
+Date: Sun, 16 Feb 2020 10:37:31 +0200
+Subject: Default cache location to current directory
+
+Bug-Debian: https://bugs.debian.org/951258
+---
+ src/TextUI/TestRunner.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/TextUI/TestRunner.php b/src/TextUI/TestRunner.php
+index 8907c47..0d3dee6 100644
+--- a/src/TextUI/TestRunner.php
++++ b/src/TextUI/TestRunner.php
+@@ -180,7 +180,7 @@ final class TestRunner extends BaseTestRunner
+ 
+                     $cacheLocation = $arguments['configurationObject']->filename();
+                 } else {
+-                    $cacheLocation = $_SERVER['PHP_SELF'];
++                    $cacheLocation = \getcwd() . \DIRECTORY_SEPARATOR . 'cache'; /* get around \dirname(...) */
+                 }
+ 
+                 $arguments['cacheResultFile'] = null;
