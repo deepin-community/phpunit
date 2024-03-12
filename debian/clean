@@ -1,0 +1,15 @@
+.phpunit.cache/
+.phpunit.result.cache
+cache.properties
+debian/autoload.tests.php.tpl
+mimic/
+src/Autoload.php
+tests/_files/.phpunit.result.cache
+tests/_files/*/.phpunit.result.cache
+tests/basic/.phpunit.result.cache
+tests/end-to-end/force-covers-annotation/.phpunit.result.cache
+tests/end-to-end/*/*/.phpunit.result.cache
+tests/end-to-end/regression/GitHub/*/.phpunit.result.cache
+vendor/
+CHANGELOG
+PHPUnit

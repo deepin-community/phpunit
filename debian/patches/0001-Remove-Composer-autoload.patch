@@ -1,0 +1,28 @@
+From: Prach Pongpanich <prachpub@gmail.com>
+Date: Tue, 30 Sep 2014 12:48:29 +0700
+Subject: Use system autoload
+
+Forwarded: not-needed
+---
+ phpunit | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/phpunit b/phpunit
+index b9f5cf2..596ee48 100755
+--- a/phpunit
++++ b/phpunit
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env php
++#!/usr/bin/php
+ <?php declare(strict_types=1);
+ /*
+  * This file is part of PHPUnit.
+@@ -72,7 +72,7 @@ if (isset($GLOBALS['_composer_autoload_path'])) {
+ 
+     unset($GLOBALS['_composer_autoload_path']);
+ } else {
+-    foreach (array(__DIR__ . '/../../autoload.php', __DIR__ . '/../vendor/autoload.php', __DIR__ . '/vendor/autoload.php') as $file) {
++    foreach (array(__DIR__ . '/../share/php/PHPUnit/Autoload.php', __DIR__ . '/../../autoload.php', __DIR__ . '/../vendor/autoload.php', __DIR__ . '/vendor/autoload.php') as $file) {
+         if (file_exists($file)) {
+             define('PHPUNIT_COMPOSER_INSTALL', $file);
+ 
