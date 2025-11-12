@@ -1,0 +1,40 @@
+From: =?utf-8?q?David_Pr=C3=A9vot?= <david@tilapin.org>
+Date: Sun, 25 Feb 2024 21:37:14 +0100
+Subject: Use system path
+
+Forwarded: not-needed
+---
+ tests/unit/Util/ExcludeListTest.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/tests/unit/Util/ExcludeListTest.php b/tests/unit/Util/ExcludeListTest.php
+index 7b63280..8bb0151 100644
+--- a/tests/unit/Util/ExcludeListTest.php
++++ b/tests/unit/Util/ExcludeListTest.php
+@@ -26,7 +26,7 @@ final class ExcludeListTest extends TestCase
+         $excludeList = new ExcludeList(true);
+ 
+         $this->assertContains(
+-            realpath(__DIR__ . '/../../../mimic/share/php/PHPUnit'),
++            realpath('/usr/share/php/PHPUnit'),
+             $excludeList->getExcludedDirectories(),
+         );
+     }
+@@ -35,7 +35,7 @@ final class ExcludeListTest extends TestCase
+     {
+         $excludeList = new ExcludeList(true);
+ 
+-        $this->assertTrue($excludeList->isExcluded(realpath(__DIR__ . '/../../../mimic/share/php/PHPUnit/Framework/TestCase.php')));
++        $this->assertTrue($excludeList->isExcluded(realpath('/usr/share/php/PHPUnit/Framework/TestCase.php')));
+         $this->assertFalse($excludeList->isExcluded(__FILE__));
+     }
+ 
+@@ -43,7 +43,7 @@ final class ExcludeListTest extends TestCase
+     {
+         $excludeList = new ExcludeList(false);
+ 
+-        $this->assertFalse($excludeList->isExcluded(realpath(__DIR__ . '/../../../mimic/share/php/PHPUnit/Framework/TestCase.php')));
++        $this->assertFalse($excludeList->isExcluded(realpath('/usr/share/php/PHPUnit/Framework/TestCase.php')));
+     }
+ 
+     public function testAdditionalDirectoryCanBeExcluded(): void

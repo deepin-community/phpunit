@@ -1,0 +1,5 @@
+Repository: https://github.com/sebastianbergmann/phpunit.git
+Repository-Browse: https://github.com/sebastianbergmann/phpunit
+Bug-Database: https://github.com/sebastianbergmann/phpunit/issues
+Bug-Submit: https://github.com/sebastianbergmann/phpunit/issues/new
+Security-Contact: https://github.com/sebastianbergmann/phpunit/tree/HEAD/SECURITY.md

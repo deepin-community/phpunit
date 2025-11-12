@@ -1,4 +1,131 @@
 #!/usr/bin/make -f
 
+include /usr/share/dpkg/default.mk
+UPSTREAM := $(DEB_VERSION_UPSTREAM)
+
 %:
 	dh $@
+
+override_dh_auto_build:
+	# Build static classloader for shipping
+	phpab --output src/Autoload.php \
+		--template debian/autoload.php.tpl src
+	# Build classloader for tests
+	mkdir --parents vendor mimic/bin mimic/share/php/data
+	phpabtpl \
+		--require-file ../mimic/share/php/PHPUnit/Autoload.php \
+		--require-file ../tests/_files/deprecation-trigger/trigger_deprecation.php \
+		--require-file ../tests/_files/CoverageNamespacedFunctionTest.php \
+		--require-file ../tests/_files/CoveredFunction.php \
+		--require-file ../tests/_files/Generator.php \
+		--require-file ../tests/_files/NamespaceCoveredFunction.php \
+		> debian/autoload.tests.php.tpl
+	phpab \
+		--output vendor/autoload.php \
+		--template debian/autoload.tests.php.tpl \
+		--exclude tests/end-to-end/deprecation-trigger/_files/deprecation-trigger-method/src/FirstPartyClass.php \
+		--exclude tests/end-to-end/deprecation-trigger/_files/deprecation-trigger-method/tests/FirstPartyClassTest.php \
+		--exclude tests/end-to-end/deprecation-trigger/_files/deprecation-trigger-method/vendor/ThirdPartyClass.php \
+		--exclude tests/end-to-end/deprecation-trigger/_files/details-process-isolation/tests/Test.php \
+		--exclude tests/end-to-end/extension/_files/class-does-not-exist/tests/Test.php \
+		--exclude tests/end-to-end/extension/_files/class-does-not-implement-interface/tests/Test.php \
+		--exclude tests/end-to-end/extension/_files/class-does-not-implement-interface/src/MyExtensionBootstrap.php \
+		--exclude tests/end-to-end/extension/_files/exception-in-extension-bootstrap-method/src/MyExtensionBootstrap.php \
+		--exclude tests/end-to-end/extension/_files/exception-in-extension-bootstrap-method/tests/Test.php \
+		--exclude tests/end-to-end/extension/_files/exception-in-extension-subscriber/src/MyExtensionBootstrap.php \
+		--exclude tests/end-to-end/extension/_files/exception-in-extension-subscriber/src/MyExecutionFinishedSubscriber.php \
+		--exclude tests/end-to-end/extension/_files/exception-in-extension-subscriber/tests/Test.php \
+		--exclude tests/end-to-end/extension/_files/extension-bootstrap/src/MyExtensionBootstrap.php \
+		--exclude tests/end-to-end/extension/_files/extension-bootstrap/tests/Test.php \
+		--exclude tests/end-to-end/extension-cli/_files/class-does-not-implement-interface/tests/Test.php \
+		--exclude tests/end-to-end/extension-cli/_files/exception-in-extension-bootstrap-method/src/MyExtensionBootstrap.php \
+		--exclude tests/end-to-end/extension-cli/_files/exception-in-extension-bootstrap-method/tests/Test.php \
+		--exclude tests/end-to-end/extension-cli/_files/exception-in-extension-constructor/src/MyExtensionBootstrap.php \
+		--exclude tests/end-to-end/extension-cli/_files/exception-in-extension-constructor/tests/Test.php \
+		--exclude tests/end-to-end/extension-cli/_files/exception-in-extension-subscriber/src/MyExtensionBootstrap.php \
+		--exclude tests/end-to-end/extension-cli/_files/exception-in-extension-subscriber/tests/Test.php \
+		--exclude tests/end-to-end/extension-cli/_files/extension-bootstrap/src/MyExtensionBootstrap.php \
+		--exclude tests/end-to-end/extension-cli/_files/extension-bootstrap/src/MyExecutionFinishedSubscriber.php \
+		--exclude tests/end-to-end/extension-cli/_files/extension-bootstrap/tests/Test.php \
+		--exclude tests/end-to-end/extension-xml/_files/class-does-not-exist/tests/Test.php \
+		--exclude tests/end-to-end/extension-xml/_files/class-does-not-implement-interface/src/MyExtensionBootstrap.php \
+		--exclude tests/end-to-end/extension-xml/_files/class-does-not-implement-interface/tests/Test.php \
+		--exclude tests/end-to-end/extension-xml/_files/exception-in-extension-bootstrap-method/src/MyExtensionBootstrap.php \
+		--exclude tests/end-to-end/extension-xml/_files/exception-in-extension-bootstrap-method/tests/Test.php \
+		--exclude tests/end-to-end/extension-xml/_files/exception-in-extension-constructor/src/MyExtensionBootstrap.php \
+		--exclude tests/end-to-end/extension-xml/_files/exception-in-extension-constructor/tests/Test.php \
+		--exclude tests/end-to-end/extension-xml/_files/exception-in-extension-subscriber/src/MyExtensionBootstrap.php \
+		--exclude tests/end-to-end/extension-xml/_files/exception-in-extension-subscriber/src/MyExecutionFinishedSubscriber.php \
+		--exclude tests/end-to-end/extension-xml/_files/exception-in-extension-subscriber/tests/Test.php \
+		--exclude tests/end-to-end/extension-xml/_files/extension-bootstrap/src/MyExtensionBootstrap.php \
+		--exclude tests/end-to-end/extension-xml/_files/extension-bootstrap/src/MyExecutionFinishedSubscriber.php \
+		--exclude tests/end-to-end/extension-xml/_files/extension-bootstrap/tests/Test.php \
+		--exclude tests/end-to-end/migration/_files/possibility-to-migrate-from-85-is-detected/src/Greeter.php \
+		--exclude tests/end-to-end/migration/_files/possibility-to-migrate-from-92-is-detected/src/Greeter.php \
+		--exclude tests/end-to-end/migration/_files/possibility-to-migrate-from-95-is-detected/src/Greeter.php \
+		--exclude tests/end-to-end/migration/_files/possibility-to-migrate-from-85-is-detected/tests/GreeterTest.php \
+		--exclude tests/end-to-end/migration/_files/possibility-to-migrate-from-92-is-detected/tests/GreeterTest.php \
+		--exclude tests/end-to-end/migration/_files/possibility-to-migrate-from-95-is-detected/tests/GreeterTest.php \
+		--exclude tests/end-to-end/regression/2448/Test.php \
+		--exclude tests/end-to-end/regression/4376/tests/Test.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/deprecation-in-test-code-ignored/tests/DeprecationInTestCodeTest.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/deprecation-trigger-function/src/FirstPartyClass.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/deprecation-trigger-function/tests/FirstPartyClassTest.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/deprecation-trigger-function/vendor/ThirdPartyClass.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/deprecation-trigger-method/src/FirstPartyClass.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/deprecation-trigger-method/tests/FirstPartyClassTest.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/deprecation-trigger-method/vendor/ThirdPartyClass.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/user-deprecation-report-self-direct-indirect/src/FirstPartyClass.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/user-deprecation-report-self-direct-indirect/tests/FirstPartyClassTest.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/user-deprecation-report-self-direct-indirect/vendor/ThirdPartyClass.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/user-deprecation-report-self-direct/src/FirstPartyClass.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/user-deprecation-report-self-direct/tests/FirstPartyClassTest.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/user-deprecation-report-self-direct/vendor/ThirdPartyClass.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/user-deprecation-report-self/src/FirstPartyClass.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/user-deprecation-report-self/tests/FirstPartyClassTest.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/user-deprecation-report-self/vendor/ThirdPartyClass.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/user-deprecation/src/FirstPartyClass.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/user-deprecation/tests/FirstPartyClassTest.php \
+		--exclude tests/end-to-end/self-direct-indirect/_files/user-deprecation/vendor/ThirdPartyClass.php \
+		--exclude tests/end-to-end/_files/baseline/generate-baseline-no-baseline-configured/tests/Test.php \
+		--exclude tests/end-to-end/_files/baseline/generate-baseline-suppressed-with-ignored-suppression/tests/Test.php \
+		--exclude tests/end-to-end/_files/baseline/generate-baseline-suppressed/src/Source.php \
+		--exclude tests/end-to-end/_files/baseline/generate-baseline/src/Source.php \
+		--exclude tests/end-to-end/_files/baseline/generate-baseline/tests/Test.php \
+		--exclude tests/end-to-end/_files/baseline/invalid-baseline/tests/Test.php \
+		--exclude tests/end-to-end/_files/baseline/unsupported-baseline/tests/Test.php \
+		--exclude tests/end-to-end/_files/baseline/use-baseline/src/Source.php \
+		--exclude tests/end-to-end/_files/baseline/use-baseline/tests/Test.php \
+		--exclude tests/end-to-end/_files/force-covers-annotation/tests/Test.php \
+		--exclude tests/end-to-end/_files/phar-extension/tests/Test.php \
+		--exclude tests/_files/AlternativeSuffixTest.test.php \
+		tests
+	# Mimic install path
+	cp phpunit mimic/bin
+	cp -r src mimic/share/php/PHPUnit
+	ln -s /usr/share/php/DeepCopy mimic/share/php
+	ln -s /usr/share/php/PharIo mimic/share/php
+	ln -s /usr/share/php/SebastianBergmann mimic/share/php
+	ln -s /usr/share/php/staabm mimic/share/php
+
+	# Mimic phpunit.xsd path
+	ln -rs . mimic/share/php/data/PHPUnit
+
+override_dh_auto_clean:
+
+override_dh_auto_test:
+	./mimic/bin/phpunit --display-skipped
+
+execute_before_dh_installman:
+	mkdir --parent $(CURDIR)/debian/tmp
+	help2man \
+		--help-option=\  \
+		--version-string=$(UPSTREAM) \
+		--source="phpunit $(UPSTREAM)" \
+		--no-info \
+		--include=$(CURDIR)/debian/phpunit.1.in \
+		"echo -n Usage: && ./phpunit --help|tail -n+4|sed 's/^  phpunit \[options\] <directory>/  or: phpunit [options] <directory>/'" \
+		> $(CURDIR)/debian/tmp/phpunit.1
+
+execute_before_dh_installchangelogs:
+	for i in $$(ls ChangeLog-*.md -r); do cat $$i >> CHANGELOG; done

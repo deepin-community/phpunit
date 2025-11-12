@@ -1,0 +1,3 @@
+Tests: phpunit
+Restrictions: allow-stderr, rw-build-tree
+Depends: patch, php-soap, phpab, pkg-php-tools, @
