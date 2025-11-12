@@ -1,0 +1,6 @@
+debian/autoloaders	usr/share/pkg-php-tools
+debian/overrides	usr/share/pkg-php-tools
+phpunit			usr/bin
+phpunit.xsd		usr/share/php/data/PHPUnit
+schema			usr/share/php/data/PHPUnit
+src/*			usr/share/php/PHPUnit
